@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Щёголев Иван | Frontend-разработчик</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #2c3e50;
+            background: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 5px 0 0; opacity: 0.9; }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            border-bottom: 1px dashed #ecf0f1;
+        }
+        section {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            border-left: 4px solid #3498db;
+        }
+        h2 { color: #2980b9; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px; }
+        h3 { color: #16a085; }
+        img { border-radius: 50%; border: 3px solid #3498db; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #bdc3c7; padding: 8px; text-align: left; }
+        th { background: #ecf0f1; }
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            border-top: 2px solid #ecf0f1;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            header { padding: 20px; }
+            nav ul { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Щёголев Иван</h1>
+        <p>Frontend-разработчик | Студент IT-института</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#hobbies">Увлечения</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <img src="https://via.placeholder.com/120" alt="Фотография Щёголева Ивана" width="120" height="120" style="float:right; margin-left:15px;">
+            <p>Привет! Меня зовут Иван. Я увлечён веб-разработкой и созданием удобных интерфейсов. 
+            Изучаю HTML5, CSS3 и JavaScript, участвую в учебных проектах и хакатонах.</p>
+            <p>Моя цель — стать профессиональным frontend-разработчиком и работать в команде, 
+            создающей полезные цифровые продукты.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <article>
+                <h3>Технические навыки</h3>
+                <ul>
+                    <li>HTML5 (семантическая разметка)</li>
+                    <li>CSS3 (Flexbox, Grid, адаптивность)</li>
+                    <li>JavaScript (базовый уровень)</li>
+                    <li>Git и GitHub</li>
+                    <li>VS Code + Live Server</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>Умение работать в команде</li>
+                    <li>Быстрое обучение</li>
+                    <li>Критическое мышление</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Образование</h2>
+            <article>
+                <h3>Институт информационных технологий</h3>
+                <p>Направление: «Программная инженерия», 2 курс.</p>
+            </article>
+            <article>
+                <h3>Дополнительные курсы</h3>
+                <table>
+                    <thead>
+                        <tr><th>Курс</th><th>Платформа</th><th>Год</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Основы HTML и CSS</td><td>Stepik</td><td>2024</td></tr>
+                        <tr><td>JavaScript для начинающих</td><td>HTML Academy</td><td>2025</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="hobbies">
+            <h2>Увлечения</h2>
+            <article>
+                <h3>Фотография</h3>
+                <p>Люблю городскую фотографию и съёмку природы. Несколько работ можно посмотреть 
+                на <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+                <figure>
+                    <img src="https://via.placeholder.com/400x200" alt="Пример городского пейзажа на рассвете" style="border-radius:8px;">
+                    <figcaption>Городской пейзаж на рассвете</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h3>Спорт</h3>
+                <p>Играю в баскетбол и бегаю по утрам. Участвую в студенческих соревнованиях.</p>
+            </article>
+        </section>
+    </main>
+
+    <aside id="contacts">
+        <h2>Контакты</h2>
+        <address>
+            Email: <a href="mailto:ivan@example.com">ivan@example.com</a><br>
+            GitHub: <a href="https://github.com" target="_blank" rel="noopener">github.com/ivan</a>
+        </address>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Щёголев Иван. Сделано с использованием VS Code и Live Server.</p>
+    </footer>
+
+</body>
+</html>
